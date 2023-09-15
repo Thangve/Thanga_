@@ -1,10 +1,22 @@
-num=int(input("enter a num"))
-fact=1
-if num < 0:
-  print("negative num")
-elif num ==0:
-  print("the factorial of a seven number 0 to 1")
-else:
- for i in range (1,num+1):
-  fact=fact*i
-print(fact)
+# Define the base class player
+class Player:
+  def play(self):
+    print("The player is playing cricket.")
+
+# Define the derived class Batsman
+class Batsman(Player):
+  def play(self):
+    print("The batsman is batting.")
+
+# Define the derived class Bowler
+class Bowler(Player):
+  def play(self):
+    print("The bowler is bowling.")
+
+# Create objects of Batsman and Bowler classes
+batsman = Batsman()
+bowler = Bowler()
+
+# Call the play() method for each object
+batsman.play()
+bowler.play()
